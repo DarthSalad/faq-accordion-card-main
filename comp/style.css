@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 :root{
     --text-blue: hsl(238, 29%, 16%);
     --text-red: hsl(14, 88%, 65%);
@@ -7,6 +7,7 @@
     --dvd: hsl(240, 5%, 91%);
     --font1:'Kumbh Sans', sans-serif;
 }
+/* bg */
 html{
     height: 100%;
     width: 100%;
@@ -18,26 +19,43 @@ body{
     justify-content: center;
     align-items: center;
     font-family: var(--font1);
-    font-weight: 300;
     color: hsla(238, 29%, 16%, 0.7);
 }
-h1{
-    font-weight: 700;
-}
+/* body */
 .box{
-    top: 70px;
+    top: 100px;
     width: 65%;
-    height: 75vh;
+    height: 70vh;
     background-image: url('./bg-pattern-desktop.svg'), url('./images/illustration-woman-online-desktop.svg');
-    background-position: left;
+    background-position: -300px -200px;
     background-color: white;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 2px;
 }
+/* text */
+h1{
+    font-weight: 5000;
+    padding-left: 40px;
+}
+.faq{
+    padding: 80px 80px 0px 380px;
+    line-height: 2rem;
+}
 .faqhead{
     font-size: 1rem;
     font-weight: 1000;
     color: var(--text-blue);
+    cursor: pointer;
+    visibility: visible;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.faqhead:hover{
+    color: var(--text-red);
+}
+ul{
+    /* visibility: collapse; */
+    font-weight: 500;
 }
