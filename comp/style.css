@@ -25,13 +25,13 @@ body{
 .box{
     top: 100px;
     width: 65%;
-    height: 70vh;
+    height: 73vh;
     background-image: 
         url('./bg-pattern-desktop.svg'),
         url('./illustration-woman-online-desktop.svg');
     background-position: 
         -428px -200px,
-        -80px 50px;
+        -80px 70px;
     background-size: 
         850px,
         500px;
@@ -61,7 +61,7 @@ h1{
     font-weight: 500;
     opacity: 0.8;
     font-family: var(--font1);
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 .faqhead:hover{
     color: var(--text-red);
@@ -75,7 +75,21 @@ hr{
 /* box-image */
 .box2{
     position: absolute;
-    top: 300px;
+    top: 320px;
     left: 190px;
     z-index: 10;
+}
+
+/* down arrow */
+.arrow{
+    display: block;
+    margin-top: -15px;
+    margin-left: 330px;
+    transition: transform 300ms ease;
+    align-items: center;
+}
+
+.arrow:hover{
+    position: inherit;
+    transform: rotate(180deg);
 }
