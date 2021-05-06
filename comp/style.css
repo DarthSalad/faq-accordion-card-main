@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 :root{
-    --text-blue: hsl(238, 29%, 16%);
+    --text-blue: hsla(238, 29%, 16%, 0.7);
     --text-red: hsl(14, 88%, 65%);
     --bg-1: rgb(175, 104, 234);
     --bg-2: rgb(100, 98, 231);
@@ -21,13 +21,21 @@ body{
     font-family: var(--font1);
     color: hsla(238, 29%, 16%, 0.7);
 }
-/* body */
+/* card */
 .box{
     top: 100px;
     width: 65%;
     height: 70vh;
-    background-image: url('./bg-pattern-desktop.svg'), url('./images/illustration-woman-online-desktop.svg');
-    background-position: -300px -200px;
+    background-image: 
+        url('./bg-pattern-desktop.svg'),
+        url('./illustration-woman-online-desktop.svg');
+    background-position: 
+        -428px -200px,
+        -80px 50px;
+    background-size: 
+        850px,
+        500px;
+    background-repeat: no-repeat;
     background-color: white;
     border-radius: 30px;
     position: relative;
@@ -40,7 +48,7 @@ h1{
     padding-left: 40px;
 }
 .faq{
-    padding: 80px 80px 0px 380px;
+    padding: 80px 80px 0px 500px;
     line-height: 2rem;
 }
 .faqhead{
@@ -48,14 +56,20 @@ h1{
     font-weight: 1000;
     color: var(--text-blue);
     cursor: pointer;
-    visibility: visible;
     font-weight: 700;
     font-family: 'Kumbh Sans', sans-serif;
 }
 .faqhead:hover{
     color: var(--text-red);
 }
-ul{
-    /* visibility: collapse; */
-    font-weight: 500;
+.droptext{
+    display: none;
+}
+/* box-image */
+.box2{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    z-index: 10;
+
 }
