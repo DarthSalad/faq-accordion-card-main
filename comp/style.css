@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700;1000;2000&family=Open+Sans&display=swap');
+
 :root{
-    --text-blue: hsla(238, 29%, 16%, 0.7);
+    --text-blue: hsl(238, 29%, 16%);
     --text-red: hsl(14, 88%, 65%);
     --bg-1: rgb(175, 104, 234);
     --bg-2: rgb(100, 98, 231);
@@ -19,7 +20,6 @@ body{
     justify-content: center;
     align-items: center;
     font-family: var(--font1);
-    color: hsla(238, 29%, 16%, 0.7);
 }
 /* card */
 .box{
@@ -44,20 +44,24 @@ body{
 }
 /* text */
 h1{
-    font-weight: 5000;
+    font-weight: 1000;
     padding-left: 40px;
 }
 .faq{
-    padding: 80px 80px 0px 500px;
+    padding: 40px 80px 100px 480px;
     line-height: 2rem;
+}
+#ttle{
+    padding-bottom: 20px;
 }
 .faqhead{
     font-size: 1rem;
-    font-weight: 1000;
     color: var(--text-blue);
     cursor: pointer;
-    font-weight: 700;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: var(--font1);
+    padding-bottom: 5px;
 }
 .faqhead:hover{
     color: var(--text-red);
@@ -65,11 +69,13 @@ h1{
 .droptext{
     display: none;
 }
+hr{
+    opacity: 0.5;
+}
 /* box-image */
 .box2{
     position: absolute;
     top: 300px;
-    left: 200px;
+    left: 190px;
     z-index: 10;
-
 }
