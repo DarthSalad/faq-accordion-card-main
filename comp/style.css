@@ -48,7 +48,7 @@ h1{
     padding-left: 40px;
 }
 .faq{
-    padding: 40px 80px 100px 480px;
+    padding: 40px 100px 100px 480px;
     line-height: 2rem;
 }
 #ttle{
@@ -70,7 +70,7 @@ h1{
     display: none;
 }
 hr{
-    opacity: 0.5;
+    opacity: 0.4;
 }
 /* box-image */
 .box2{
