@@ -40,10 +40,11 @@ body{
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px 2px;
+    box-shadow: rgb(30, 29, 61) 0px 20px 50px -25px;
 }
 /* text */
 h1{
+    font-size: 2.3rem;
     font-weight: 1000;
     padding-left: 40px;
 }
@@ -55,12 +56,11 @@ h1{
     padding-bottom: 20px;
 }
 .faqhead{
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--text-blue);
     cursor: pointer;
     font-weight: 500;
     opacity: 0.8;
-    font-family: var(--font1);
     padding-bottom: 15px;
 }
 .faqhead:hover{
@@ -68,6 +68,11 @@ h1{
 }
 .droptext{
     display: none;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-blue);
+    opacity: 0.6;
+    line-height: 1.25rem;
 }
 hr{
     opacity: 0.4;
@@ -76,8 +81,9 @@ hr{
 .box2{
     position: absolute;
     top: 320px;
-    left: 190px;
+    left: 180px;
     z-index: 10;
+    filter: drop-shadow(0px 10px 5px rgba(30, 29, 61, 0.5));
 }
 
 /* down arrow */
@@ -85,11 +91,19 @@ hr{
     display: block;
     margin-top: -15px;
     margin-left: 330px;
-    transition: transform 300ms ease;
+    /* transition: transform 300ms ease; */
     align-items: center;
 }
 
-.arrow:hover{
-    position: inherit;
+/* on clicked functions */
+.arrow-clicked {
     transform: rotate(180deg);
+}
+
+.faqhead-clicked {
+    font-weight: 900;
+}
+
+.sect-clicked .droptext{
+    display: inline-block;
 }
